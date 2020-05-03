@@ -18,8 +18,8 @@ len(bz_pts)
 
 for i in range(0,20):
 	bz_pts[i].co = Vector((x[i], runge1(x[i]), 0.0))
-	bz_pts[i].handle_left = Vector((x[i], runge1(x[i]), 0.0))
-	bz_pts[i].handle_right = Vector((x[i], runge1(x[i]), 0.0))
+	bz_pts[i].handle_left = Vector(0.0, 0.0, 0.0))
+	bz_pts[i].handle_right = Vector(0.0, 0.0, 0.0))
 
 ops.object.mode_set(mode='OBJECT')
 obj_data = context.active_object.data
